@@ -1,0 +1,9 @@
+1:Llego a 60 minutos y no obtuvo ningun resultado
+2:
+3:Entra en un bucle infinito
+4:
+5:Llega a un bucle infinito
+6:
+7:Lego a 60 minutos y no obtuvo ningun resultado 
+8:
+
