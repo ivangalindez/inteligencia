@@ -1,0 +1,11 @@
+1:{'a': 'Lasers', 'c': 'Cabinasparatripulantes','b': 'Cabinasparatripulantes','e': 'Lasers',
+   'd': 'Lasers','g': 'Cabinasparatripulantes','f': 'Motores','i': 'Bahiasdecarga',
+   'h': 'Lasers','k': 'Cabinasparatripulantes','j': 'Lasers','m': 'Motores',
+   'l': 'Lasers','o': 'Lasers','n':'Sistemasdevidaextraterrestre','q': 'Baterias',
+   'p': 'Escudos'}
+
+2:{'a': 'Bahiasdecarga', 'c': 'Cabinasparatripulantes','b': 'Cabinasparatripulantes',
+   'e': 'Bahiasdecarga','d': 'Escudos','g': 'Cabinasparatripulantes','f': 'Motores',
+   'i': 'Bahiasdecarga','h': 'Sistemasdevidaextraterrestre','k': 'Lasers',
+   'j': 'Sistemasdevidaextraterrestre','m': 'Escudos','l':'Cabinasparatripulantes',
+   'o': 'Bahiasdecarga','n': 'Sistemasdevidaextraterrestre', 'q':'Baterias','p':'Escudos'}
