@@ -98,6 +98,12 @@ def TodosModulos(variables,values):
             return False
     return True
 
+def resolver(metodo_busqueda,iteraciones):
+    problema = CspProblem(slots, dominios, restricciones)
+    if metodo_busqueda == "backtrack":
+        return backtrack(problema)
+    if metodo_busqueda == "min_conflicts":
+        return min_conflicts(problema, iterations_limit=iteraciones)
 #########################################################################
 restricciones = []
 
