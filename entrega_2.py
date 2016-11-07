@@ -55,9 +55,8 @@ def CabinaMotores(variables,values):
 
 def escudoExtraterrestre(variables,values):
     #escudo no conectados a sistema de vida extraterrestres
-    if 'Escudos'not in values or 'Sistemasdevidaextraterrestre' not in values:
-        return True
-
+    return 'Escudos'not in values or 'Sistemasdevidaextraterrestre' not in values:
+      
 def distintos(variables,values):
     sloat_a, sloat_b = values
     #no debe haber dos seguidos
@@ -66,9 +65,9 @@ def distintos(variables,values):
 
 def extraterrestreCabina(variables, values):
      #sistema de extraterrestre conectado a la cabina
-    if 'Cabinasparatripulantes' in values and 'Sistemasdevidaextraterrestre' in values:
-                return True
-    return False
+    if 'Cabinasparatripulantes' == values[0]:
+                return 'Sistemasdevidaextraterrestre' in values
+    return True
 
 def bahiasCabina(variables, values):
     if 'Bahiasdecarga' == values[0]:
@@ -78,7 +77,7 @@ def bahiasCabina(variables, values):
 def bateriaDosElementos(variables, values):
 
     #mas q dos conexiones a la bateria
-    if values[0] == 'Baterias':
+    if  'Baterias'== values[0] :
         cant = 0
         for variable in values:
             if variable == 'Lasers':
@@ -89,8 +88,8 @@ def bateriaDosElementos(variables, values):
                 cant = cant + 1
             if variable == 'SistemasVidaExtraterrestre':
                 cant = cant + 1
-        if cant > 1:
-            return true
+        return cant > 1:
+    return true
 
 def TodosModulos(variables,values):
     for m in modulos:
@@ -117,9 +116,9 @@ for slot in slotsPares:
     restricciones.append((slot, distintos))
 
 for slot in slotsAdyacentes:
-    restricciones.append((slotsAdyacentes, extraterrestreCabina))
-    restricciones.append((slotsAdyacentes, bahiasCabina))
-    restricciones.append((slotsAdyacentes, bateriaDosElementos))
+    restricciones.append((slot, extraterrestreCabina))
+    restricciones.append((slot, bahiasCabina))
+    restricciones.append((slot, bateriaDosElementos))
     restricciones.append((slot,motorLugares))
 
 
