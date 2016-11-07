@@ -55,7 +55,7 @@ def CabinaMotores(variables,values):
 
 def escudoExtraterrestre(variables,values):
     #escudo no conectados a sistema de vida extraterrestres
-    return 'Escudos'not in values or 'Sistemasdevidaextraterrestre' not in values:
+    return 'Escudos'not in values or 'Sistemasdevidaextraterrestre' not in values
       
 def distintos(variables,values):
     sloat_a, sloat_b = values
@@ -88,8 +88,8 @@ def bateriaDosElementos(variables, values):
                 cant = cant + 1
             if variable == 'SistemasVidaExtraterrestre':
                 cant = cant + 1
-        return cant > 1:
-    return true
+        return cant > 1
+    return True
 
 def TodosModulos(variables,values):
     for m in modulos:
